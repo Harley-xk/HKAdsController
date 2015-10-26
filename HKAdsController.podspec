@@ -35,4 +35,5 @@ Pod::Spec.new do |s|
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit', 'Foundation', 'MobileCoreServices'
   s.dependency 'Google-Mobile-Ads-SDK', '~> 7.5.0', 'DomobAdSDK', '~> 4.4.8'
+  s.dependency 'DomobAdSDK', '~> 4.4.8'
 end
