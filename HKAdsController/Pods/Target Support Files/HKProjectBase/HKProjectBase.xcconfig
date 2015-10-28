@@ -1,0 +1,5 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = "${PODS_ROOT}/Headers/Private" "${PODS_ROOT}/Headers/Private/HKProjectBase" "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/DomobAdSDK" "${PODS_ROOT}/Headers/Public/Google-Mobile-Ads-SDK" "${PODS_ROOT}/Headers/Public/HKProjectBase" "${PODS_ROOT}/Headers/Public/MBProgressHUD"
+OTHER_LDFLAGS = -framework "Foundation" -framework "MobileCoreServices" -framework "UIKit"
+PODS_ROOT = ${SRCROOT}
+SKIP_INSTALL = YES

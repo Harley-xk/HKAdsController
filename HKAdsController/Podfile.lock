@@ -1,0 +1,28 @@
+PODS:
+  - DomobAdSDK (4.4.8)
+  - Google-Mobile-Ads-SDK (7.5.0)
+  - HKProjectBase (0.2.1):
+    - MBProgressHUD (~> 0.9.1)
+  - MBProgressHUD (0.9.1)
+
+DEPENDENCIES:
+  - DomobAdSDK (~> 4.4.8)
+  - Google-Mobile-Ads-SDK (~> 7.5.0)
+  - HKProjectBase (from `https://github.com/Harley-xk/HKProjectBase.git`)
+
+EXTERNAL SOURCES:
+  HKProjectBase:
+    :git: https://github.com/Harley-xk/HKProjectBase.git
+
+CHECKOUT OPTIONS:
+  HKProjectBase:
+    :commit: ed76299f21c80d24f1317a825e3e31a9f3918cab
+    :git: https://github.com/Harley-xk/HKProjectBase.git
+
+SPEC CHECKSUMS:
+  DomobAdSDK: 356ff5eb607fce20bf4050a7ca5621a03d2fc272
+  Google-Mobile-Ads-SDK: 24879c6e4d1c2f9767e68bb9e65640a06c711143
+  HKProjectBase: dad1ec4a5a777e5acf7fc5234df6f3ff1cab4c0b
+  MBProgressHUD: c47f2c166c126cf2ce36498d80f33e754d4e93ad
+
+COCOAPODS: 0.39.0

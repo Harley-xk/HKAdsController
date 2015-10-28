@@ -1,0 +1,892 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		01B7B5C8512193262924BE95BD3CC037 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A6E64F1689D82D1E804C5F103A0AC9C /* MobileCoreServices.framework */; };
+		0276A97F3B5E6588E3911443414D0EA1 /* HKProjectBase-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 58CB56314DA6A327CA3DFC101341F7B7 /* HKProjectBase-dummy.m */; };
+		02F8FAB4FC851D0B3636528763AE673D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A03F77D8E578713E44AD3BADCE801F0 /* CoreGraphics.framework */; };
+		0840EAB05A23B444029A43AB67F011CB /* HK_ProgressHUD_CheckMark.png in Resources */ = {isa = PBXBuildFile; fileRef = A299A641534F78A969DD8F4A82CACD38 /* HK_ProgressHUD_CheckMark.png */; };
+		0865BD337B19A4F82007DDF35C066B03 /* HKUserDefaults.h in Headers */ = {isa = PBXBuildFile; fileRef = 64ACDB66243E30C53947DF8B62CB3850 /* HKUserDefaults.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		148AA40BE11F75222FD70C15828EFCC4 /* MBProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 471824428F0839062417D541E1E4E65C /* MBProgressHUD.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		1617D77BFD93CF0B57254B8D8471A9BD /* HKPinYinIndexer.h in Headers */ = {isa = PBXBuildFile; fileRef = 805C0E5FB8B3BEF81549513C91B4EC0C /* HKPinYinIndexer.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		19B5ED219E58BBF5C50C00235BDE2106 /* UIColor+HKHex.m in Sources */ = {isa = PBXBuildFile; fileRef = 8459CCA3DDCE265813D79045212D53B1 /* UIColor+HKHex.m */; };
+		22594A3B9B6B226B9054EBBB07C62044 /* UIView+HKProjectBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 0615EC9E3B3217FC54B1178412C43EEE /* UIView+HKProjectBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		22F49196BE818947E0E8165CFD7921C4 /* HKProjectBaseUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = DF944221DA0B05DC1D46A2A8AB87C511 /* HKProjectBaseUtils.m */; };
+		292A4D302F43ED8349B5EE9C5E29D83B /* NSDate+Exts.m in Sources */ = {isa = PBXBuildFile; fileRef = F62192DFBFEC9C0F6E7156A5DD248A71 /* NSDate+Exts.m */; };
+		2B23503879F8D8B016A9B0E3392A55DA /* NSString+HKBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 43EDA71CE88A8AF214C33FEAC639A331 /* NSString+HKBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2D9B69893BD341841470C589C496AD34 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB15FA82408047A28EBFA4BADA07D57B /* UIKit.framework */; };
+		30E9DA1DDE41668E8B1E277EE0E9DAA0 /* UITextField+HKPlaceHolder.h in Headers */ = {isa = PBXBuildFile; fileRef = 8525F74C8A29D93A3C21CF7AF44BA27A /* UITextField+HKPlaceHolder.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		34085D6A301C4AE18E757738147FD8FC /* UIViewController+HKKeyboardManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 2EE1087B2A2771A2F00240556E2355F1 /* UIViewController+HKKeyboardManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3E1BC0116B912B38A69DBEF4A13B9804 /* NSString+HKRC4.h in Headers */ = {isa = PBXBuildFile; fileRef = 94EDA66F8A63FD2F91852335109ACBCE /* NSString+HKRC4.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4CF878DF5FF77433A019534334F8CDD6 /* UIViewController+HKProjectBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 5580426774843C0A15E438A664A98DFA /* UIViewController+HKProjectBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5337C19CB280394BA004F2D4D2F807A5 /* UIActionSheet+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = E34B9B138C5F45C8ABCD65F9983A5334 /* UIActionSheet+HKProjectBase.m */; };
+		545736674EA89460EA96E1B2D5A9B501 /* UIView+HKProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C279E9193009D2BFA2A1B12A7B4CC6B6 /* UIView+HKProgressHUD.m */; };
+		58EA0CBBD51265319046D14437FCF114 /* MBProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = D491D441E0B3DEAE18B7FCA1CA0BAA89 /* MBProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F295C25EA1F8E06ECE3E79397257C2F /* NSDate+Exts.h in Headers */ = {isa = PBXBuildFile; fileRef = AB7484A1CF39ED795862CD3FF447DC1F /* NSDate+Exts.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		651E0657C3F34A8CE8CA151CF762F69F /* HKPinYinIndexer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F36AF16D7425E3D9DF1FCACD6D4A3B1 /* HKPinYinIndexer.m */; };
+		68339A25BBC227233F663E165762544A /* NSString+HKBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = A37BF32E29B5F98ACBA164F4B31B3D58 /* NSString+HKBase64.m */; };
+		6C1F099CE1665E8A9FF5B654F494867F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 539F192A713D727F32FD48A66FB2B67D /* Foundation.framework */; };
+		7A0C539D7591DB42219484BA0B750446 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 539F192A713D727F32FD48A66FB2B67D /* Foundation.framework */; };
+		7BB223E3B65D2F324C3E34E82647C9A3 /* MBProgressHUD-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 01A5BEF9AF7E7AD8065B314C79A954BE /* MBProgressHUD-dummy.m */; };
+		7BF8B88CB0FC72EAF7DF5D2AD3B6E564 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 539F192A713D727F32FD48A66FB2B67D /* Foundation.framework */; };
+		7EECA6FED9895C282CBD5954C920AC7D /* UIColor+HKHex.h in Headers */ = {isa = PBXBuildFile; fileRef = 1E5139836247608D56BA4A58FCB41B59 /* UIColor+HKHex.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		886ED45EAA113B31152F92DD1696F4F7 /* HK_ProgressHUD_CheckMark@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4FE41A90F27466F064740701CE0B3780 /* HK_ProgressHUD_CheckMark@2x.png */; };
+		8DD34D7772C4D04CFF71929520D4DE07 /* UITextField+HKPlaceHolder.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E2E0764592FADFC9D12F58C7E7461C /* UITextField+HKPlaceHolder.m */; };
+		93FEF6C47C423BB7F2DB75CFB7A60262 /* UINavigationBar+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A0DAB1BA63EB9EE4E4A79CD70D814A4 /* UINavigationBar+HKProjectBase.m */; };
+		98692AAAC98AC051059DBA296448AEA0 /* UIResponder+HKProjectBase.h in Headers */ = {isa = PBXBuildFile; fileRef = BFD41ECCF1CC3E39D410A0D505ECBAD9 /* UIResponder+HKProjectBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		991B846BB681740586B5F10792AF3DD8 /* HKProjectBase.h in Headers */ = {isa = PBXBuildFile; fileRef = EB35A91E04B5838DB7187D8ACB7B21DA /* HKProjectBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E74A54261543729A22FFD36A0DAE437 /* UIViewController+HKProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = B029422E2488487E8225486C207BCEDD /* UIViewController+HKProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A5C10C8F37D03CC8906EC3914F4B0461 /* NSString+HKProjectBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 99E25BDAF516785FF7F43AE0668E8D70 /* NSString+HKProjectBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B333536EEE2C45A79A62E1AEB32F1655 /* HKUserDefaults.m in Sources */ = {isa = PBXBuildFile; fileRef = CEE861BD0D45C3D753E0334F626348CF /* HKUserDefaults.m */; };
+		B69D7556888EA6AB2E01C169FBBDB010 /* UIAlertView+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = E558926DB14BEDAEB3A31BAA99E50AC5 /* UIAlertView+HKProjectBase.m */; };
+		B73488CF61B72EED5D79AA2492CDED2C /* NSString+HKRC4.m in Sources */ = {isa = PBXBuildFile; fileRef = E5703C9258AD0B12A56C96A87E2ECD2F /* NSString+HKRC4.m */; };
+		BD6CB557DD70FDE61F2F73CF2A337D6B /* NSString+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3623738655AFB84CF8DA62963948C6C7 /* NSString+HKProjectBase.m */; };
+		BF69D5CD0546395BB4C5B6BA780A7D71 /* Pods-HKAdsController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E97909A0A00C2B7F6E2915704F50A0C /* Pods-HKAdsController-dummy.m */; };
+		C61D02558C3A7C4300DF0148C2E86958 /* HKProjectBaseUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 66C0E9CB08CEFDBD68AB1787AD2A5F18 /* HKProjectBaseUtils.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CEB0CDBC607CE66C4C18B651C6595468 /* UIView+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 34F958AC3DCCD4905897C28CB1A54423 /* UIView+HKProjectBase.m */; };
+		D77D20786B462150F086C1B959E5FDC9 /* UIView+HKProgressHUD.h in Headers */ = {isa = PBXBuildFile; fileRef = 33B6FC1F4CCE52A5ED036125C1A60080 /* UIView+HKProgressHUD.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D970BAB61967BB18F48328E6B82E274A /* UIViewController+HKKeyboardManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D27EFE91399B133C558838240CECBBDE /* UIViewController+HKKeyboardManager.m */; };
+		DB4E5DEF39A967987D7167DB0E7EF2CA /* UINavigationBar+HKProjectBase.h in Headers */ = {isa = PBXBuildFile; fileRef = B32186502AFA5969202BF4A3A32045C1 /* UINavigationBar+HKProjectBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		DF244F82CD8BEC70F0F2BF71B38A8F93 /* UIViewController+HKProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 67939F4DD99351BA7AB006247DCCCBC1 /* UIViewController+HKProgressHUD.m */; };
+		EA4948B3ACE46762989C2863E9D4AF2E /* UIActionSheet+HKProjectBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 6D610C1B3B5C8BB815B4AB4284F295B4 /* UIActionSheet+HKProjectBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EB5E49195E3AC9EE9EC510C6A0FC187E /* UIResponder+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E9A238853668E35F5821EC2D0D13905 /* UIResponder+HKProjectBase.m */; };
+		EC92CF208B6633D30EB7ABD07D7AA966 /* UIAlertView+HKProjectBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 7FE10D18B8CE2ED7B603B67FA63EE835 /* UIAlertView+HKProjectBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		FA824924AE9F60B42CF740475324F67F /* UIViewController+HKProjectBase.m in Sources */ = {isa = PBXBuildFile; fileRef = C6622A5B5959DB078FFD6B9F5F6E08C9 /* UIViewController+HKProjectBase.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1BB498E35AA37353BF2D737E0E4AD5CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7436F8AF87676F7B1D026EA3B36A479F;
+			remoteInfo = MBProgressHUD;
+		};
+		3D7EBBE152491BD98DA84762794EA140 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7436F8AF87676F7B1D026EA3B36A479F;
+			remoteInfo = MBProgressHUD;
+		};
+		EE53B5DC21318EC16D953C3CAEDC8843 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7A5EAA480E420058CB2421742921DABB;
+			remoteInfo = "HKProjectBase-HKProjectBase";
+		};
+		F33FA0CCA511C58F7C58ACB8C1524005 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C9C83466BA98E391F71834E940C8047;
+			remoteInfo = HKProjectBase;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		002D99BEFA6507994A650A114008C55E /* Pods-HKAdsController-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-HKAdsController-acknowledgements.plist"; sourceTree = "<group>"; };
+		00721CED1C4054C48A5C751A09525EC8 /* DMSplashAdController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DMSplashAdController.h; path = DomobAdSDK/DMSplashAdController.h; sourceTree = "<group>"; };
+		01A5BEF9AF7E7AD8065B314C79A954BE /* MBProgressHUD-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD-dummy.m"; sourceTree = "<group>"; };
+		0615EC9E3B3217FC54B1178412C43EEE /* UIView+HKProjectBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+HKProjectBase.h"; path = "Pod/Classes/UI Extentions/UIView+HKProjectBase.h"; sourceTree = "<group>"; };
+		0772F0AA58A35673800DD8C157FC5897 /* MBProgressHUD.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = MBProgressHUD.xcconfig; sourceTree = "<group>"; };
+		0F36AF16D7425E3D9DF1FCACD6D4A3B1 /* HKPinYinIndexer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HKPinYinIndexer.m; path = Pod/Classes/Utils/HKPinYinIndexer.m; sourceTree = "<group>"; };
+		1E5139836247608D56BA4A58FCB41B59 /* UIColor+HKHex.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+HKHex.h"; path = "Pod/Classes/Utils/UIColor+HKHex.h"; sourceTree = "<group>"; };
+		1E97909A0A00C2B7F6E2915704F50A0C /* Pods-HKAdsController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-HKAdsController-dummy.m"; sourceTree = "<group>"; };
+		2364B213EB84FA6F11F0E6396BD83995 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleMobileAds.framework; path = "GoogleMobileAdsSdkiOS-7.5.0/GoogleMobileAds.framework"; sourceTree = "<group>"; };
+		28F912DB8F2C6A600C8400412AE56423 /* MBProgressHUD-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD-prefix.pch"; sourceTree = "<group>"; };
+		2C8D9FF0071FB8366E637B748E1246C4 /* DMRTSplashAdController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DMRTSplashAdController.h; path = DomobAdSDK/DMRTSplashAdController.h; sourceTree = "<group>"; };
+		2EE1087B2A2771A2F00240556E2355F1 /* UIViewController+HKKeyboardManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+HKKeyboardManager.h"; path = "Pod/Classes/UI Extentions/UIViewController+HKKeyboardManager.h"; sourceTree = "<group>"; };
+		33B6FC1F4CCE52A5ED036125C1A60080 /* UIView+HKProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+HKProgressHUD.h"; path = "Pod/Classes/UI Extentions/UIView+HKProgressHUD.h"; sourceTree = "<group>"; };
+		34F958AC3DCCD4905897C28CB1A54423 /* UIView+HKProjectBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+HKProjectBase.m"; path = "Pod/Classes/UI Extentions/UIView+HKProjectBase.m"; sourceTree = "<group>"; };
+		3623738655AFB84CF8DA62963948C6C7 /* NSString+HKProjectBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+HKProjectBase.m"; path = "Pod/Classes/Utils/NSString+HKProjectBase.m"; sourceTree = "<group>"; };
+		4055418A60A41FA2B7D3D24892748E6E /* DMAdView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DMAdView.h; path = DomobAdSDK/DMAdView.h; sourceTree = "<group>"; };
+		43EDA71CE88A8AF214C33FEAC639A331 /* NSString+HKBase64.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+HKBase64.h"; path = "Pod/Classes/Utils/NSString+HKBase64.h"; sourceTree = "<group>"; };
+		4448C4ABC48F3A0935D808278C690153 /* DMFeedsAdView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DMFeedsAdView.h; path = DomobAdSDK/DMFeedsAdView.h; sourceTree = "<group>"; };
+		471824428F0839062417D541E1E4E65C /* MBProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = MBProgressHUD.m; sourceTree = "<group>"; };
+		4A03F77D8E578713E44AD3BADCE801F0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		4F8062202F33F9C9D6289E109B625363 /* Pods-HKAdsController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HKAdsController.debug.xcconfig"; sourceTree = "<group>"; };
+		4FE41A90F27466F064740701CE0B3780 /* HK_ProgressHUD_CheckMark@2x.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "HK_ProgressHUD_CheckMark@2x.png"; path = "Pod/Assets/HK_ProgressHUD_CheckMark@2x.png"; sourceTree = "<group>"; };
+		539F192A713D727F32FD48A66FB2B67D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5580426774843C0A15E438A664A98DFA /* UIViewController+HKProjectBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+HKProjectBase.h"; path = "Pod/Classes/UI Extentions/UIViewController+HKProjectBase.h"; sourceTree = "<group>"; };
+		58CB56314DA6A327CA3DFC101341F7B7 /* HKProjectBase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HKProjectBase-dummy.m"; sourceTree = "<group>"; };
+		632BCA092EA3EB42B62B9EDEF6ED9C22 /* HKProjectBase.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HKProjectBase.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		63E2E0764592FADFC9D12F58C7E7461C /* UITextField+HKPlaceHolder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+HKPlaceHolder.m"; path = "Pod/Classes/UI Extentions/UITextField+HKPlaceHolder.m"; sourceTree = "<group>"; };
+		64ACDB66243E30C53947DF8B62CB3850 /* HKUserDefaults.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HKUserDefaults.h; path = Pod/Classes/Utils/HKUserDefaults.h; sourceTree = "<group>"; };
+		66C0E9CB08CEFDBD68AB1787AD2A5F18 /* HKProjectBaseUtils.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HKProjectBaseUtils.h; path = Pod/Classes/Utils/HKProjectBaseUtils.h; sourceTree = "<group>"; };
+		67939F4DD99351BA7AB006247DCCCBC1 /* UIViewController+HKProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+HKProgressHUD.m"; path = "Pod/Classes/UI Extentions/UIViewController+HKProgressHUD.m"; sourceTree = "<group>"; };
+		6A0DAB1BA63EB9EE4E4A79CD70D814A4 /* UINavigationBar+HKProjectBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationBar+HKProjectBase.m"; path = "Pod/Classes/UI Extentions/UINavigationBar+HKProjectBase.m"; sourceTree = "<group>"; };
+		6A6E64F1689D82D1E804C5F103A0AC9C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/MobileCoreServices.framework; sourceTree = DEVELOPER_DIR; };
+		6D610C1B3B5C8BB815B4AB4284F295B4 /* UIActionSheet+HKProjectBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIActionSheet+HKProjectBase.h"; path = "Pod/Classes/UI Extentions/UIActionSheet+HKProjectBase.h"; sourceTree = "<group>"; };
+		6E9A238853668E35F5821EC2D0D13905 /* UIResponder+HKProjectBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIResponder+HKProjectBase.m"; path = "Pod/Classes/UI Extentions/UIResponder+HKProjectBase.m"; sourceTree = "<group>"; };
+		7277AE65581D904082DDDE9CFF4158A1 /* HKProjectBase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = HKProjectBase.xcconfig; sourceTree = "<group>"; };
+		7F8D9F4D5E78AFCD988B10CF595A78EE /* DMTools.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DMTools.h; path = DomobAdSDK/DMTools.h; sourceTree = "<group>"; };
+		7FE10D18B8CE2ED7B603B67FA63EE835 /* UIAlertView+HKProjectBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIAlertView+HKProjectBase.h"; path = "Pod/Classes/UI Extentions/UIAlertView+HKProjectBase.h"; sourceTree = "<group>"; };
+		805C0E5FB8B3BEF81549513C91B4EC0C /* HKPinYinIndexer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HKPinYinIndexer.h; path = Pod/Classes/Utils/HKPinYinIndexer.h; sourceTree = "<group>"; };
+		8459CCA3DDCE265813D79045212D53B1 /* UIColor+HKHex.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+HKHex.m"; path = "Pod/Classes/Utils/UIColor+HKHex.m"; sourceTree = "<group>"; };
+		8525F74C8A29D93A3C21CF7AF44BA27A /* UITextField+HKPlaceHolder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+HKPlaceHolder.h"; path = "Pod/Classes/UI Extentions/UITextField+HKPlaceHolder.h"; sourceTree = "<group>"; };
+		8C11272012FCD44C624B458EF0844871 /* libPods-HKAdsController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HKAdsController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		8D0790096E7DE5585BCE1D1E6F379B1E /* Pods-HKAdsController-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HKAdsController-frameworks.sh"; sourceTree = "<group>"; };
+		94EDA66F8A63FD2F91852335109ACBCE /* NSString+HKRC4.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+HKRC4.h"; path = "Pod/Classes/Utils/NSString+HKRC4.h"; sourceTree = "<group>"; };
+		99E25BDAF516785FF7F43AE0668E8D70 /* NSString+HKProjectBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+HKProjectBase.h"; path = "Pod/Classes/Utils/NSString+HKProjectBase.h"; sourceTree = "<group>"; };
+		9C0F4B3C54B01B0A2E1838C41543D925 /* libMBProgressHUD.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libMBProgressHUD.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		A299A641534F78A969DD8F4A82CACD38 /* HK_ProgressHUD_CheckMark.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = HK_ProgressHUD_CheckMark.png; path = Pod/Assets/HK_ProgressHUD_CheckMark.png; sourceTree = "<group>"; };
+		A37BF32E29B5F98ACBA164F4B31B3D58 /* NSString+HKBase64.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+HKBase64.m"; path = "Pod/Classes/Utils/NSString+HKBase64.m"; sourceTree = "<group>"; };
+		A583959E0A5720DD29B210725F0D03AD /* Pods-HKAdsController-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-HKAdsController-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AB7484A1CF39ED795862CD3FF447DC1F /* NSDate+Exts.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+Exts.h"; path = "Pod/Classes/Utils/NSDate+Exts.h"; sourceTree = "<group>"; };
+		ACF55C37F42628902A6AD67D31EBAAB7 /* Pods-HKAdsController-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-HKAdsController-resources.sh"; sourceTree = "<group>"; };
+		B029422E2488487E8225486C207BCEDD /* UIViewController+HKProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+HKProgressHUD.h"; path = "Pod/Classes/UI Extentions/UIViewController+HKProgressHUD.h"; sourceTree = "<group>"; };
+		B2F12AD8F924A6B0C32B0F2157AA3696 /* HKProjectBase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HKProjectBase-prefix.pch"; sourceTree = "<group>"; };
+		B32186502AFA5969202BF4A3A32045C1 /* UINavigationBar+HKProjectBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UINavigationBar+HKProjectBase.h"; path = "Pod/Classes/UI Extentions/UINavigationBar+HKProjectBase.h"; sourceTree = "<group>"; };
+		BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		BC46E18C469E0137A27D4660E32D4B15 /* libHKProjectBase.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libHKProjectBase.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFD41ECCF1CC3E39D410A0D505ECBAD9 /* UIResponder+HKProjectBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIResponder+HKProjectBase.h"; path = "Pod/Classes/UI Extentions/UIResponder+HKProjectBase.h"; sourceTree = "<group>"; };
+		C279E9193009D2BFA2A1B12A7B4CC6B6 /* UIView+HKProgressHUD.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+HKProgressHUD.m"; path = "Pod/Classes/UI Extentions/UIView+HKProgressHUD.m"; sourceTree = "<group>"; };
+		C6622A5B5959DB078FFD6B9F5F6E08C9 /* UIViewController+HKProjectBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+HKProjectBase.m"; path = "Pod/Classes/UI Extentions/UIViewController+HKProjectBase.m"; sourceTree = "<group>"; };
+		CB15FA82408047A28EBFA4BADA07D57B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		CEE861BD0D45C3D753E0334F626348CF /* HKUserDefaults.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HKUserDefaults.m; path = Pod/Classes/Utils/HKUserDefaults.m; sourceTree = "<group>"; };
+		D27EFE91399B133C558838240CECBBDE /* UIViewController+HKKeyboardManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+HKKeyboardManager.m"; path = "Pod/Classes/UI Extentions/UIViewController+HKKeyboardManager.m"; sourceTree = "<group>"; };
+		D3288E83FF83C0A5CB2ED56C2BAB8202 /* DomobAdSDKBundle.bundle */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "wrapper.plug-in"; name = DomobAdSDKBundle.bundle; path = DomobAdSDK/DomobAdSDKBundle/DomobAdSDKBundle.bundle; sourceTree = "<group>"; };
+		D491D441E0B3DEAE18B7FCA1CA0BAA89 /* MBProgressHUD.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = MBProgressHUD.h; sourceTree = "<group>"; };
+		DF944221DA0B05DC1D46A2A8AB87C511 /* HKProjectBaseUtils.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = HKProjectBaseUtils.m; path = Pod/Classes/Utils/HKProjectBaseUtils.m; sourceTree = "<group>"; };
+		E34B9B138C5F45C8ABCD65F9983A5334 /* UIActionSheet+HKProjectBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIActionSheet+HKProjectBase.m"; path = "Pod/Classes/UI Extentions/UIActionSheet+HKProjectBase.m"; sourceTree = "<group>"; };
+		E4DF75B120EA683A0E722AAE92D6F2FD /* Pods-HKAdsController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-HKAdsController.release.xcconfig"; sourceTree = "<group>"; };
+		E558926DB14BEDAEB3A31BAA99E50AC5 /* UIAlertView+HKProjectBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIAlertView+HKProjectBase.m"; path = "Pod/Classes/UI Extentions/UIAlertView+HKProjectBase.m"; sourceTree = "<group>"; };
+		E5703C9258AD0B12A56C96A87E2ECD2F /* NSString+HKRC4.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+HKRC4.m"; path = "Pod/Classes/Utils/NSString+HKRC4.m"; sourceTree = "<group>"; };
+		EA6C53CA53A0082727AE94D2C096B3F7 /* DMInterstitialAdController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DMInterstitialAdController.h; path = DomobAdSDK/DMInterstitialAdController.h; sourceTree = "<group>"; };
+		EB35A91E04B5838DB7187D8ACB7B21DA /* HKProjectBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = HKProjectBase.h; path = Pod/Classes/HKProjectBase.h; sourceTree = "<group>"; };
+		F62192DFBFEC9C0F6E7156A5DD248A71 /* NSDate+Exts.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Exts.m"; path = "Pod/Classes/Utils/NSDate+Exts.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1CE824248B8D2EEBBA023B9975A630C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		37E9A007CBBD4B430D698AFC84595C7E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				02F8FAB4FC851D0B3636528763AE673D /* CoreGraphics.framework in Frameworks */,
+				6C1F099CE1665E8A9FF5B654F494867F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66C38AE7A30FC66DDFD5000CD705AEE3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BF8B88CB0FC72EAF7DF5D2AD3B6E564 /* Foundation.framework in Frameworks */,
+				01B7B5C8512193262924BE95BD3CC037 /* MobileCoreServices.framework in Frameworks */,
+				2D9B69893BD341841470C589C496AD34 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6E1425CE8BDB08C010F921DC8323DF82 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A0C539D7591DB42219484BA0B750446 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0848FF6BB3851AD54158CC970B6BB82B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A299A641534F78A969DD8F4A82CACD38 /* HK_ProgressHUD_CheckMark.png */,
+				4FE41A90F27466F064740701CE0B3780 /* HK_ProgressHUD_CheckMark@2x.png */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		0B450B01B3E4EC75DE4A8526738F2F50 /* MBProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				D491D441E0B3DEAE18B7FCA1CA0BAA89 /* MBProgressHUD.h */,
+				471824428F0839062417D541E1E4E65C /* MBProgressHUD.m */,
+				E3FC37FBBBF5DC1530633099372DED17 /* Support Files */,
+			);
+			path = MBProgressHUD;
+			sourceTree = "<group>";
+		};
+		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F8ADA845BBC0CA0E7E9808B1A635D90C /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1AB1B5DC903E4D4CE88E2C644472B037 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				632BCA092EA3EB42B62B9EDEF6ED9C22 /* HKProjectBase.bundle */,
+				BC46E18C469E0137A27D4660E32D4B15 /* libHKProjectBase.a */,
+				9C0F4B3C54B01B0A2E1838C41543D925 /* libMBProgressHUD.a */,
+				8C11272012FCD44C624B458EF0844871 /* libPods-HKAdsController.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FC1874C78655FF8AFC7BEBCC0EEE408 /* DomobAdSDK */ = {
+			isa = PBXGroup;
+			children = (
+				4055418A60A41FA2B7D3D24892748E6E /* DMAdView.h */,
+				4448C4ABC48F3A0935D808278C690153 /* DMFeedsAdView.h */,
+				EA6C53CA53A0082727AE94D2C096B3F7 /* DMInterstitialAdController.h */,
+				2C8D9FF0071FB8366E637B748E1246C4 /* DMRTSplashAdController.h */,
+				00721CED1C4054C48A5C751A09525EC8 /* DMSplashAdController.h */,
+				7F8D9F4D5E78AFCD988B10CF595A78EE /* DMTools.h */,
+				29072380AA0C7C61C8167640A9D375A2 /* Resources */,
+			);
+			path = DomobAdSDK;
+			sourceTree = "<group>";
+		};
+		29072380AA0C7C61C8167640A9D375A2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D3288E83FF83C0A5CB2ED56C2BAB8202 /* DomobAdSDKBundle.bundle */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		30FB4EEDBACD58A5C33B054CC20BC367 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				8B6160DD78BCE5E18F173923D8ACBEDD /* Pods-HKAdsController */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		446A3955B573F04AC49EB576B360980A /* Google-Mobile-Ads-SDK */ = {
+			isa = PBXGroup;
+			children = (
+				89AC802A5F0B86DA58309BDD7188976B /* Frameworks */,
+			);
+			path = "Google-Mobile-Ads-SDK";
+			sourceTree = "<group>";
+		};
+		6FC10365C7EA07B45DE4F986D7B4E6D1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1FC1874C78655FF8AFC7BEBCC0EEE408 /* DomobAdSDK */,
+				446A3955B573F04AC49EB576B360980A /* Google-Mobile-Ads-SDK */,
+				C6C07B0385BFA0393871D5BFB1E32C44 /* HKProjectBase */,
+				0B450B01B3E4EC75DE4A8526738F2F50 /* MBProgressHUD */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		777C690FA456575CF7AF4ADC8FC04850 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				7277AE65581D904082DDDE9CFF4158A1 /* HKProjectBase.xcconfig */,
+				58CB56314DA6A327CA3DFC101341F7B7 /* HKProjectBase-dummy.m */,
+				B2F12AD8F924A6B0C32B0F2157AA3696 /* HKProjectBase-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HKProjectBase";
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				BA6428E9F66FD5A23C0A2E06ED26CD2F /* Podfile */,
+				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
+				6FC10365C7EA07B45DE4F986D7B4E6D1 /* Pods */,
+				1AB1B5DC903E4D4CE88E2C644472B037 /* Products */,
+				30FB4EEDBACD58A5C33B054CC20BC367 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		89AC802A5F0B86DA58309BDD7188976B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2364B213EB84FA6F11F0E6396BD83995 /* GoogleMobileAds.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8B6160DD78BCE5E18F173923D8ACBEDD /* Pods-HKAdsController */ = {
+			isa = PBXGroup;
+			children = (
+				A583959E0A5720DD29B210725F0D03AD /* Pods-HKAdsController-acknowledgements.markdown */,
+				002D99BEFA6507994A650A114008C55E /* Pods-HKAdsController-acknowledgements.plist */,
+				1E97909A0A00C2B7F6E2915704F50A0C /* Pods-HKAdsController-dummy.m */,
+				8D0790096E7DE5585BCE1D1E6F379B1E /* Pods-HKAdsController-frameworks.sh */,
+				ACF55C37F42628902A6AD67D31EBAAB7 /* Pods-HKAdsController-resources.sh */,
+				4F8062202F33F9C9D6289E109B625363 /* Pods-HKAdsController.debug.xcconfig */,
+				E4DF75B120EA683A0E722AAE92D6F2FD /* Pods-HKAdsController.release.xcconfig */,
+			);
+			name = "Pods-HKAdsController";
+			path = "Target Support Files/Pods-HKAdsController";
+			sourceTree = "<group>";
+		};
+		C6C07B0385BFA0393871D5BFB1E32C44 /* HKProjectBase */ = {
+			isa = PBXGroup;
+			children = (
+				805C0E5FB8B3BEF81549513C91B4EC0C /* HKPinYinIndexer.h */,
+				0F36AF16D7425E3D9DF1FCACD6D4A3B1 /* HKPinYinIndexer.m */,
+				EB35A91E04B5838DB7187D8ACB7B21DA /* HKProjectBase.h */,
+				66C0E9CB08CEFDBD68AB1787AD2A5F18 /* HKProjectBaseUtils.h */,
+				DF944221DA0B05DC1D46A2A8AB87C511 /* HKProjectBaseUtils.m */,
+				64ACDB66243E30C53947DF8B62CB3850 /* HKUserDefaults.h */,
+				CEE861BD0D45C3D753E0334F626348CF /* HKUserDefaults.m */,
+				AB7484A1CF39ED795862CD3FF447DC1F /* NSDate+Exts.h */,
+				F62192DFBFEC9C0F6E7156A5DD248A71 /* NSDate+Exts.m */,
+				43EDA71CE88A8AF214C33FEAC639A331 /* NSString+HKBase64.h */,
+				A37BF32E29B5F98ACBA164F4B31B3D58 /* NSString+HKBase64.m */,
+				99E25BDAF516785FF7F43AE0668E8D70 /* NSString+HKProjectBase.h */,
+				3623738655AFB84CF8DA62963948C6C7 /* NSString+HKProjectBase.m */,
+				94EDA66F8A63FD2F91852335109ACBCE /* NSString+HKRC4.h */,
+				E5703C9258AD0B12A56C96A87E2ECD2F /* NSString+HKRC4.m */,
+				6D610C1B3B5C8BB815B4AB4284F295B4 /* UIActionSheet+HKProjectBase.h */,
+				E34B9B138C5F45C8ABCD65F9983A5334 /* UIActionSheet+HKProjectBase.m */,
+				7FE10D18B8CE2ED7B603B67FA63EE835 /* UIAlertView+HKProjectBase.h */,
+				E558926DB14BEDAEB3A31BAA99E50AC5 /* UIAlertView+HKProjectBase.m */,
+				1E5139836247608D56BA4A58FCB41B59 /* UIColor+HKHex.h */,
+				8459CCA3DDCE265813D79045212D53B1 /* UIColor+HKHex.m */,
+				B32186502AFA5969202BF4A3A32045C1 /* UINavigationBar+HKProjectBase.h */,
+				6A0DAB1BA63EB9EE4E4A79CD70D814A4 /* UINavigationBar+HKProjectBase.m */,
+				BFD41ECCF1CC3E39D410A0D505ECBAD9 /* UIResponder+HKProjectBase.h */,
+				6E9A238853668E35F5821EC2D0D13905 /* UIResponder+HKProjectBase.m */,
+				8525F74C8A29D93A3C21CF7AF44BA27A /* UITextField+HKPlaceHolder.h */,
+				63E2E0764592FADFC9D12F58C7E7461C /* UITextField+HKPlaceHolder.m */,
+				33B6FC1F4CCE52A5ED036125C1A60080 /* UIView+HKProgressHUD.h */,
+				C279E9193009D2BFA2A1B12A7B4CC6B6 /* UIView+HKProgressHUD.m */,
+				0615EC9E3B3217FC54B1178412C43EEE /* UIView+HKProjectBase.h */,
+				34F958AC3DCCD4905897C28CB1A54423 /* UIView+HKProjectBase.m */,
+				2EE1087B2A2771A2F00240556E2355F1 /* UIViewController+HKKeyboardManager.h */,
+				D27EFE91399B133C558838240CECBBDE /* UIViewController+HKKeyboardManager.m */,
+				B029422E2488487E8225486C207BCEDD /* UIViewController+HKProgressHUD.h */,
+				67939F4DD99351BA7AB006247DCCCBC1 /* UIViewController+HKProgressHUD.m */,
+				5580426774843C0A15E438A664A98DFA /* UIViewController+HKProjectBase.h */,
+				C6622A5B5959DB078FFD6B9F5F6E08C9 /* UIViewController+HKProjectBase.m */,
+				0848FF6BB3851AD54158CC970B6BB82B /* Resources */,
+				777C690FA456575CF7AF4ADC8FC04850 /* Support Files */,
+			);
+			path = HKProjectBase;
+			sourceTree = "<group>";
+		};
+		E3FC37FBBBF5DC1530633099372DED17 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				0772F0AA58A35673800DD8C157FC5897 /* MBProgressHUD.xcconfig */,
+				01A5BEF9AF7E7AD8065B314C79A954BE /* MBProgressHUD-dummy.m */,
+				28F912DB8F2C6A600C8400412AE56423 /* MBProgressHUD-prefix.pch */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/MBProgressHUD";
+			sourceTree = "<group>";
+		};
+		F8ADA845BBC0CA0E7E9808B1A635D90C /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				4A03F77D8E578713E44AD3BADCE801F0 /* CoreGraphics.framework */,
+				539F192A713D727F32FD48A66FB2B67D /* Foundation.framework */,
+				6A6E64F1689D82D1E804C5F103A0AC9C /* MobileCoreServices.framework */,
+				CB15FA82408047A28EBFA4BADA07D57B /* UIKit.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		408E78F76F5567E2FC53300C3A4ED3B3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1617D77BFD93CF0B57254B8D8471A9BD /* HKPinYinIndexer.h in Headers */,
+				991B846BB681740586B5F10792AF3DD8 /* HKProjectBase.h in Headers */,
+				C61D02558C3A7C4300DF0148C2E86958 /* HKProjectBaseUtils.h in Headers */,
+				0865BD337B19A4F82007DDF35C066B03 /* HKUserDefaults.h in Headers */,
+				5F295C25EA1F8E06ECE3E79397257C2F /* NSDate+Exts.h in Headers */,
+				2B23503879F8D8B016A9B0E3392A55DA /* NSString+HKBase64.h in Headers */,
+				A5C10C8F37D03CC8906EC3914F4B0461 /* NSString+HKProjectBase.h in Headers */,
+				3E1BC0116B912B38A69DBEF4A13B9804 /* NSString+HKRC4.h in Headers */,
+				EA4948B3ACE46762989C2863E9D4AF2E /* UIActionSheet+HKProjectBase.h in Headers */,
+				EC92CF208B6633D30EB7ABD07D7AA966 /* UIAlertView+HKProjectBase.h in Headers */,
+				7EECA6FED9895C282CBD5954C920AC7D /* UIColor+HKHex.h in Headers */,
+				DB4E5DEF39A967987D7167DB0E7EF2CA /* UINavigationBar+HKProjectBase.h in Headers */,
+				98692AAAC98AC051059DBA296448AEA0 /* UIResponder+HKProjectBase.h in Headers */,
+				30E9DA1DDE41668E8B1E277EE0E9DAA0 /* UITextField+HKPlaceHolder.h in Headers */,
+				D77D20786B462150F086C1B959E5FDC9 /* UIView+HKProgressHUD.h in Headers */,
+				22594A3B9B6B226B9054EBBB07C62044 /* UIView+HKProjectBase.h in Headers */,
+				34085D6A301C4AE18E757738147FD8FC /* UIViewController+HKKeyboardManager.h in Headers */,
+				9E74A54261543729A22FFD36A0DAE437 /* UIViewController+HKProgressHUD.h in Headers */,
+				4CF878DF5FF77433A019534334F8CDD6 /* UIViewController+HKProjectBase.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8EF5553C5332E0A93839C972A644084C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				58EA0CBBD51265319046D14437FCF114 /* MBProgressHUD.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		195DB2288BD83AE07164BC51B6FEB0E6 /* Pods-HKAdsController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF45BB1ECA2E2331DDB708FEAEACD785 /* Build configuration list for PBXNativeTarget "Pods-HKAdsController" */;
+			buildPhases = (
+				EA81EC0E7B249868481F1DA35239A56C /* Sources */,
+				6E1425CE8BDB08C010F921DC8323DF82 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0B5C4C3E23DC50F2577F10A520BFED40 /* PBXTargetDependency */,
+				42DDDA37E5F3B458461A7419C7CFBDB0 /* PBXTargetDependency */,
+			);
+			name = "Pods-HKAdsController";
+			productName = "Pods-HKAdsController";
+			productReference = 8C11272012FCD44C624B458EF0844871 /* libPods-HKAdsController.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		2C9C83466BA98E391F71834E940C8047 /* HKProjectBase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1A18CD290FCB7FFE5862DABCDD77660B /* Build configuration list for PBXNativeTarget "HKProjectBase" */;
+			buildPhases = (
+				2745EDE24F7EA5FF95652AD8CB951456 /* Sources */,
+				66C38AE7A30FC66DDFD5000CD705AEE3 /* Frameworks */,
+				408E78F76F5567E2FC53300C3A4ED3B3 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				667077D6E9C11B4200199FED2676F2A2 /* PBXTargetDependency */,
+				EFF41B2EC82C75D7BFEB4DD9D53B6633 /* PBXTargetDependency */,
+			);
+			name = HKProjectBase;
+			productName = HKProjectBase;
+			productReference = BC46E18C469E0137A27D4660E32D4B15 /* libHKProjectBase.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7436F8AF87676F7B1D026EA3B36A479F /* MBProgressHUD */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DC360E9420E50360782373B698A577D /* Build configuration list for PBXNativeTarget "MBProgressHUD" */;
+			buildPhases = (
+				DF7033854BC93A3486428C862E7022F6 /* Sources */,
+				37E9A007CBBD4B430D698AFC84595C7E /* Frameworks */,
+				8EF5553C5332E0A93839C972A644084C /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MBProgressHUD;
+			productName = MBProgressHUD;
+			productReference = 9C0F4B3C54B01B0A2E1838C41543D925 /* libMBProgressHUD.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		7A5EAA480E420058CB2421742921DABB /* HKProjectBase-HKProjectBase */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA73B56932E055DCCB83F423FE01E313 /* Build configuration list for PBXNativeTarget "HKProjectBase-HKProjectBase" */;
+			buildPhases = (
+				8F9A4CBFBFDCC65CC9791C64BAD69708 /* Sources */,
+				1CE824248B8D2EEBBA023B9975A630C4 /* Frameworks */,
+				74C7D017FF09E627E465B2491A21DC11 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "HKProjectBase-HKProjectBase";
+			productName = "HKProjectBase-HKProjectBase";
+			productReference = 632BCA092EA3EB42B62B9EDEF6ED9C22 /* HKProjectBase.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0700;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 1AB1B5DC903E4D4CE88E2C644472B037 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2C9C83466BA98E391F71834E940C8047 /* HKProjectBase */,
+				7A5EAA480E420058CB2421742921DABB /* HKProjectBase-HKProjectBase */,
+				7436F8AF87676F7B1D026EA3B36A479F /* MBProgressHUD */,
+				195DB2288BD83AE07164BC51B6FEB0E6 /* Pods-HKAdsController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		74C7D017FF09E627E465B2491A21DC11 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0840EAB05A23B444029A43AB67F011CB /* HK_ProgressHUD_CheckMark.png in Resources */,
+				886ED45EAA113B31152F92DD1696F4F7 /* HK_ProgressHUD_CheckMark@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2745EDE24F7EA5FF95652AD8CB951456 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				651E0657C3F34A8CE8CA151CF762F69F /* HKPinYinIndexer.m in Sources */,
+				0276A97F3B5E6588E3911443414D0EA1 /* HKProjectBase-dummy.m in Sources */,
+				22F49196BE818947E0E8165CFD7921C4 /* HKProjectBaseUtils.m in Sources */,
+				B333536EEE2C45A79A62E1AEB32F1655 /* HKUserDefaults.m in Sources */,
+				292A4D302F43ED8349B5EE9C5E29D83B /* NSDate+Exts.m in Sources */,
+				68339A25BBC227233F663E165762544A /* NSString+HKBase64.m in Sources */,
+				BD6CB557DD70FDE61F2F73CF2A337D6B /* NSString+HKProjectBase.m in Sources */,
+				B73488CF61B72EED5D79AA2492CDED2C /* NSString+HKRC4.m in Sources */,
+				5337C19CB280394BA004F2D4D2F807A5 /* UIActionSheet+HKProjectBase.m in Sources */,
+				B69D7556888EA6AB2E01C169FBBDB010 /* UIAlertView+HKProjectBase.m in Sources */,
+				19B5ED219E58BBF5C50C00235BDE2106 /* UIColor+HKHex.m in Sources */,
+				93FEF6C47C423BB7F2DB75CFB7A60262 /* UINavigationBar+HKProjectBase.m in Sources */,
+				EB5E49195E3AC9EE9EC510C6A0FC187E /* UIResponder+HKProjectBase.m in Sources */,
+				8DD34D7772C4D04CFF71929520D4DE07 /* UITextField+HKPlaceHolder.m in Sources */,
+				545736674EA89460EA96E1B2D5A9B501 /* UIView+HKProgressHUD.m in Sources */,
+				CEB0CDBC607CE66C4C18B651C6595468 /* UIView+HKProjectBase.m in Sources */,
+				D970BAB61967BB18F48328E6B82E274A /* UIViewController+HKKeyboardManager.m in Sources */,
+				DF244F82CD8BEC70F0F2BF71B38A8F93 /* UIViewController+HKProgressHUD.m in Sources */,
+				FA824924AE9F60B42CF740475324F67F /* UIViewController+HKProjectBase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8F9A4CBFBFDCC65CC9791C64BAD69708 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DF7033854BC93A3486428C862E7022F6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BB223E3B65D2F324C3E34E82647C9A3 /* MBProgressHUD-dummy.m in Sources */,
+				148AA40BE11F75222FD70C15828EFCC4 /* MBProgressHUD.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EA81EC0E7B249868481F1DA35239A56C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF69D5CD0546395BB4C5B6BA780A7D71 /* Pods-HKAdsController-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0B5C4C3E23DC50F2577F10A520BFED40 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = HKProjectBase;
+			target = 2C9C83466BA98E391F71834E940C8047 /* HKProjectBase */;
+			targetProxy = F33FA0CCA511C58F7C58ACB8C1524005 /* PBXContainerItemProxy */;
+		};
+		42DDDA37E5F3B458461A7419C7CFBDB0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBProgressHUD;
+			target = 7436F8AF87676F7B1D026EA3B36A479F /* MBProgressHUD */;
+			targetProxy = 1BB498E35AA37353BF2D737E0E4AD5CC /* PBXContainerItemProxy */;
+		};
+		667077D6E9C11B4200199FED2676F2A2 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "HKProjectBase-HKProjectBase";
+			target = 7A5EAA480E420058CB2421742921DABB /* HKProjectBase-HKProjectBase */;
+			targetProxy = EE53B5DC21318EC16D953C3CAEDC8843 /* PBXContainerItemProxy */;
+		};
+		EFF41B2EC82C75D7BFEB4DD9D53B6633 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = MBProgressHUD;
+			target = 7436F8AF87676F7B1D026EA3B36A479F /* MBProgressHUD */;
+			targetProxy = 3D7EBBE152491BD98DA84762794EA140 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2C8344DCA915037EA37107A9EEB464D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4F8062202F33F9C9D6289E109B625363 /* Pods-HKAdsController.debug.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4F756263F5406F2FD0DCA1D4A6BE1E1B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0772F0AA58A35673800DD8C157FC5897 /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		577639385ACAAB482C19E2CAC040D353 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7277AE65581D904082DDDE9CFF4158A1 /* HKProjectBase.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HKProjectBase/HKProjectBase-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		584E5AE58D26C4898210ACE12BAB13DB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7277AE65581D904082DDDE9CFF4158A1 /* HKProjectBase.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = HKProjectBase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		5CD74AE315502DCBCB86912E5D420C8D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7277AE65581D904082DDDE9CFF4158A1 /* HKProjectBase.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				PRODUCT_NAME = HKProjectBase;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				ONLY_ACTIVE_ARCH = YES;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		74857149DC1E0D599B8A01A78349A926 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = "RELEASE=1";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		92BF4407A7763D76215FADC8794A8F82 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7277AE65581D904082DDDE9CFF4158A1 /* HKProjectBase.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/HKProjectBase/HKProjectBase-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		9586149D462F61123F275A038ED27A98 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0772F0AA58A35673800DD8C157FC5897 /* MBProgressHUD.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/MBProgressHUD/MBProgressHUD-prefix.pch";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PRIVATE_HEADERS_FOLDER_PATH = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PUBLIC_HEADERS_FOLDER_PATH = "";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		D1E644C16687909A724FEA912D02F044 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E4DF75B120EA683A0E722AAE92D6F2FD /* Pods-HKAdsController.release.xcconfig */;
+			buildSettings = {
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MACH_O_TYPE = staticlib;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1A18CD290FCB7FFE5862DABCDD77660B /* Build configuration list for PBXNativeTarget "HKProjectBase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				577639385ACAAB482C19E2CAC040D353 /* Debug */,
+				92BF4407A7763D76215FADC8794A8F82 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DC360E9420E50360782373B698A577D /* Build configuration list for PBXNativeTarget "MBProgressHUD" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F756263F5406F2FD0DCA1D4A6BE1E1B /* Debug */,
+				9586149D462F61123F275A038ED27A98 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CE5176205D06FF3FFE3DDDA9291E44B /* Debug */,
+				74857149DC1E0D599B8A01A78349A926 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA73B56932E055DCCB83F423FE01E313 /* Build configuration list for PBXNativeTarget "HKProjectBase-HKProjectBase" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5CD74AE315502DCBCB86912E5D420C8D /* Debug */,
+				584E5AE58D26C4898210ACE12BAB13DB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF45BB1ECA2E2331DDB708FEAEACD785 /* Build configuration list for PBXNativeTarget "Pods-HKAdsController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C8344DCA915037EA37107A9EEB464D7 /* Debug */,
+				D1E644C16687909A724FEA912D02F044 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

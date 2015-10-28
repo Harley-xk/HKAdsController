@@ -1,0 +1,1 @@
+../../../HKProjectBase/Pod/Classes/Utils/NSString+HKBase64.h

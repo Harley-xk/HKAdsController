@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "HKAdsController.h"
 
 @interface ViewController ()
 
@@ -17,6 +18,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+        
+    if ([[HKAdsController sharedController] currentLangeType] == HKAdsLanguageType_Chinese) {
+        NSLog(@"Domob!");
+    }else {
+        NSLog(@"AdMob!");
+    }
+
 }
 
 - (void)didReceiveMemoryWarning {

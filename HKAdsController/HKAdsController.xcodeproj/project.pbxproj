@@ -7,32 +7,44 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B204236FA19B6F3496AA258E /* libPods-HKAdsController.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8715D631073177A0F9AB737A /* libPods-HKAdsController.a */; };
 		C31727581BDE31FB004F36CE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C31727571BDE31FB004F36CE /* main.m */; };
 		C317275B1BDE31FB004F36CE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C317275A1BDE31FB004F36CE /* AppDelegate.m */; };
 		C317275E1BDE31FB004F36CE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C317275D1BDE31FB004F36CE /* ViewController.m */; };
-		C31727611BDE31FB004F36CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C317275F1BDE31FB004F36CE /* Main.storyboard */; };
 		C31727631BDE31FB004F36CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C31727621BDE31FB004F36CE /* Assets.xcassets */; };
-		C31727661BDE31FB004F36CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C31727641BDE31FB004F36CE /* LaunchScreen.storyboard */; };
 		C31727EE1BDE325A004F36CE /* HKAdsController.podspec in Resources */ = {isa = PBXBuildFile; fileRef = C31727ED1BDE325A004F36CE /* HKAdsController.podspec */; };
 		C31727F01BDE3281004F36CE /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C31727EF1BDE3281004F36CE /* README.md */; };
 		C31727F31BDE3390004F36CE /* HKAdsController.m in Sources */ = {isa = PBXBuildFile; fileRef = C31727F21BDE3390004F36CE /* HKAdsController.m */; };
+		C3D1CF9C1BDF6D0D0013FC26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3D1CF981BDF6D0D0013FC26 /* LaunchScreen.storyboard */; };
+		C3D1CF9D1BDF6D0D0013FC26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3D1CF9A1BDF6D0D0013FC26 /* Main.storyboard */; };
+		C3D1CFA21BDF70600013FC26 /* HKInterstitialAdsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D1CFA11BDF70600013FC26 /* HKInterstitialAdsViewController.m */; };
+		C3D1CFA71BE0598E0013FC26 /* HKAdsBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D1CFA61BE0598E0013FC26 /* HKAdsBannerView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3F8EB5841EF937AF6612AC05 /* Pods-HKAdsController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKAdsController.release.xcconfig"; path = "Pods/Target Support Files/Pods-HKAdsController/Pods-HKAdsController.release.xcconfig"; sourceTree = "<group>"; };
+		4448C109B355A2522F078188 /* Pods-HKAdsController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HKAdsController.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HKAdsController/Pods-HKAdsController.debug.xcconfig"; sourceTree = "<group>"; };
+		8715D631073177A0F9AB737A /* libPods-HKAdsController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-HKAdsController.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C31727531BDE31FB004F36CE /* HKAdsController.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HKAdsController.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C31727571BDE31FB004F36CE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		C31727591BDE31FB004F36CE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		C317275A1BDE31FB004F36CE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		C317275C1BDE31FB004F36CE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		C317275D1BDE31FB004F36CE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		C31727601BDE31FB004F36CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C31727621BDE31FB004F36CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		C31727651BDE31FB004F36CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C31727671BDE31FB004F36CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C31727ED1BDE325A004F36CE /* HKAdsController.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = HKAdsController.podspec; path = ../HKAdsController.podspec; sourceTree = "<group>"; };
 		C31727EF1BDE3281004F36CE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C31727F11BDE3390004F36CE /* HKAdsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKAdsController.h; sourceTree = "<group>"; };
 		C31727F21BDE3390004F36CE /* HKAdsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKAdsController.m; sourceTree = "<group>"; };
+		C3D1CF991BDF6D0D0013FC26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C3D1CF9B1BDF6D0D0013FC26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C3D1CFA01BDF70600013FC26 /* HKInterstitialAdsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKInterstitialAdsViewController.h; sourceTree = "<group>"; };
+		C3D1CFA11BDF70600013FC26 /* HKInterstitialAdsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKInterstitialAdsViewController.m; sourceTree = "<group>"; };
+		C3D1CFA31BDF7D500013FC26 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
+		C3D1CFA41BDF7D500013FC26 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
+		C3D1CFA51BE0598E0013FC26 /* HKAdsBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKAdsBannerView.h; sourceTree = "<group>"; };
+		C3D1CFA61BE0598E0013FC26 /* HKAdsBannerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKAdsBannerView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,12 +52,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B204236FA19B6F3496AA258E /* libPods-HKAdsController.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		48E1AE28714B31E217D565BA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8715D631073177A0F9AB737A /* libPods-HKAdsController.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8DCC072684C7B176F32EC516 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4448C109B355A2522F078188 /* Pods-HKAdsController.debug.xcconfig */,
+				3F8EB5841EF937AF6612AC05 /* Pods-HKAdsController.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		C317274A1BDE31FB004F36CE = {
 			isa = PBXGroup;
 			children = (
@@ -54,6 +84,8 @@
 				C31727551BDE31FB004F36CE /* HKAdsController */,
 				C31727AD1BDE323B004F36CE /* Pod */,
 				C31727541BDE31FB004F36CE /* Products */,
+				8DCC072684C7B176F32EC516 /* Pods */,
+				48E1AE28714B31E217D565BA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,9 +104,9 @@
 				C317275A1BDE31FB004F36CE /* AppDelegate.m */,
 				C317275C1BDE31FB004F36CE /* ViewController.h */,
 				C317275D1BDE31FB004F36CE /* ViewController.m */,
-				C317275F1BDE31FB004F36CE /* Main.storyboard */,
+				C3D1CF981BDF6D0D0013FC26 /* LaunchScreen.storyboard */,
+				C3D1CF9A1BDF6D0D0013FC26 /* Main.storyboard */,
 				C31727621BDE31FB004F36CE /* Assets.xcassets */,
-				C31727641BDE31FB004F36CE /* LaunchScreen.storyboard */,
 				C31727671BDE31FB004F36CE /* Info.plist */,
 				C31727561BDE31FB004F36CE /* Supporting Files */,
 			);
@@ -111,6 +143,10 @@
 			children = (
 				C31727F11BDE3390004F36CE /* HKAdsController.h */,
 				C31727F21BDE3390004F36CE /* HKAdsController.m */,
+				C3D1CFA01BDF70600013FC26 /* HKInterstitialAdsViewController.h */,
+				C3D1CFA11BDF70600013FC26 /* HKInterstitialAdsViewController.m */,
+				C3D1CFA51BE0598E0013FC26 /* HKAdsBannerView.h */,
+				C3D1CFA61BE0598E0013FC26 /* HKAdsBannerView.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -122,9 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C317276A1BDE31FB004F36CE /* Build configuration list for PBXNativeTarget "HKAdsController" */;
 			buildPhases = (
+				8E66FFA8C409C635986B9EEE /* Check Pods Manifest.lock */,
 				C317274F1BDE31FB004F36CE /* Sources */,
 				C31727501BDE31FB004F36CE /* Frameworks */,
 				C31727511BDE31FB004F36CE /* Resources */,
+				67E79ED666DDDD8A7384C904 /* Embed Pods Frameworks */,
+				DD76083C64CE7D353BC731FA /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -172,20 +211,70 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C31727661BDE31FB004F36CE /* LaunchScreen.storyboard in Resources */,
+				C3D1CF9C1BDF6D0D0013FC26 /* LaunchScreen.storyboard in Resources */,
 				C31727631BDE31FB004F36CE /* Assets.xcassets in Resources */,
 				C31727EE1BDE325A004F36CE /* HKAdsController.podspec in Resources */,
-				C31727611BDE31FB004F36CE /* Main.storyboard in Resources */,
+				C3D1CF9D1BDF6D0D0013FC26 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		67E79ED666DDDD8A7384C904 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HKAdsController/Pods-HKAdsController-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8E66FFA8C409C635986B9EEE /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		DD76083C64CE7D353BC731FA /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HKAdsController/Pods-HKAdsController-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C317274F1BDE31FB004F36CE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C3D1CFA71BE0598E0013FC26 /* HKAdsBannerView.m in Sources */,
+				C3D1CFA21BDF70600013FC26 /* HKInterstitialAdsViewController.m in Sources */,
 				C317275E1BDE31FB004F36CE /* ViewController.m in Sources */,
 				C317275B1BDE31FB004F36CE /* AppDelegate.m in Sources */,
 				C31727F31BDE3390004F36CE /* HKAdsController.m in Sources */,
@@ -197,20 +286,22 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		C317275F1BDE31FB004F36CE /* Main.storyboard */ = {
+		C3D1CF981BDF6D0D0013FC26 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C31727601BDE31FB004F36CE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		C31727641BDE31FB004F36CE /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				C31727651BDE31FB004F36CE /* Base */,
+				C3D1CF991BDF6D0D0013FC26 /* Base */,
+				C3D1CFA31BDF7D500013FC26 /* zh-Hans */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		C3D1CF9A1BDF6D0D0013FC26 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C3D1CF9B1BDF6D0D0013FC26 /* Base */,
+				C3D1CFA41BDF7D500013FC26 /* zh-Hans */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -233,9 +324,11 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_BITCODE = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -252,7 +345,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -276,9 +369,11 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_BITCODE = NO;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -289,7 +384,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
@@ -298,23 +393,31 @@
 		};
 		C317276B1BDE31FB004F36CE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4448C109B355A2522F078188 /* Pods-HKAdsController.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = HKAdsController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Harley.HKAdsController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		C317276C1BDE31FB004F36CE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3F8EB5841EF937AF6612AC05 /* Pods-HKAdsController.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = HKAdsController/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Harley.HKAdsController;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
@@ -337,6 +440,7 @@
 				C317276C1BDE31FB004F36CE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
