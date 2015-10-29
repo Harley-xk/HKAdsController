@@ -19,6 +19,7 @@
     }
     
     [self setAdUnitID:adsController.admobBannerID];
+    [self setAutoloadEnabled:YES];
 }
 
 @end
