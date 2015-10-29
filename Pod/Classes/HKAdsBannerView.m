@@ -12,9 +12,13 @@
 
 - (void)awakeFromNib
 {
-    if ([[HKAdsController sharedController] adsDisabled]) {
+    HKAdsController *adsController = [HKAdsController sharedController];
+    
+    if ([adsController adsDisabled]) {
         self.hidden = YES;
     }
+    
+    [self setAdUnitID:adsController.admobBannerID];
 }
 
 @end
