@@ -46,7 +46,7 @@ NSString *kAdsDisabledKey = @"com.HKAdsController.AdsDisabled";
     }
     
     _adsDisabled = [HKUserDefaults boolForKey:kAdsDisabledKey];
-    _adsDisabled = YES;
+
     return self;
 }
 
