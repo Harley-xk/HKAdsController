@@ -9,7 +9,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "HKAdsController"
-  s.version          = "1.0.0"
+  s.version          = "1.1.0"
   s.summary          = "Ads controller for all my projects."
   s.description      = <<-DESC
                        An optional longer description of HKProjectBase
