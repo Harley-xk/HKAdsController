@@ -9,6 +9,10 @@
 #import "HKAdsInterstitialController.h"
 #import "HKAdsController.h"
 
+NSString *HKInterstitialDidHideNotificationName = @"HKInterstitialDidHideNotificationName";
+NSString *HKInterstitialDidShowNotificationName = @"HKInterstitialDidShowNotificationName";
+NSString *HKInterstitialDidLoadNotificationName = @"HKInterstitialDidLoadNotificationName";
+
 @interface HKAdsInterstitialController ()
 <GADInterstitialDelegate>
 @property (strong, nonatomic) GADInterstitial *interstitial;
@@ -87,6 +91,7 @@
         [self.interstitial presentFromRootViewController:self.adsWindow.rootViewController];
         self.lastInterstitial = [NSDate date];
         self.didHideAdsWindow = NO;
+        [[NSNotificationCenter defaultCenter] postNotificationName:HKInterstitialDidShowNotificationName object:nil];
     }
 }
 
@@ -115,6 +120,8 @@
 #pragma mark - GADInterstitialDelegate
 - (void)interstitialDidReceiveAd:(GADInterstitial *)adInterstitial
 {
+    [[NSNotificationCenter defaultCenter] postNotificationName:HKInterstitialDidLoadNotificationName object:nil];
+
     if (self.showAdsImmediately) {
         [self showInterstitialAds];
         self.showAdsImmediately = NO;

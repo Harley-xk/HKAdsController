@@ -37,7 +37,7 @@
 - (void)applicationWillEnterForeground:(UIApplication *)application {
     // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.3 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-        [[HKAdsController sharedController] presentInterstitials];
+        [[HKAdsInterstitialController sharedController] showInterstitialAds];
     });
 }
 
@@ -60,7 +60,7 @@
     adsController.admobInterstitialID = @"ca-app-pub-2630844222801153/7351679029";
     adsController.admobBannerID = @"ca-app-pub-2630844222801153/8374807423";
     
-    [adsController presentInterstitials];
+//    [[HKAdsInterstitialController sharedController] showInterstitialAds];
 }
 
 

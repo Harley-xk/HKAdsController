@@ -7,11 +7,9 @@
 //
 
 #import "HKAdsController.h"
-#import "HKInterstitialAdsViewController.h"
 #import <HKProjectBase.h>
 
 NSString *kAdsDisabledKey = @"com.HKAdsController.AdsDisabled";
-NSString *HKInterstitialDidHideNotificationName = @"HKInterstitialDidHideNotificationName";
 
 @interface HKAdsController ()
 @property (assign, nonatomic) HKAdsLanguageType languageType;

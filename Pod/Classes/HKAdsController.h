@@ -9,13 +9,15 @@
 #import <Foundation/Foundation.h>
 #import <GoogleMobileAds/GoogleMobileAds.h>
 
+#import "HKAdsInterstitialController.h"
+#import "HKAdsBannerView.h"
+
 typedef NS_ENUM(NSUInteger, HKAdsLanguageType)
 {
     HKAdsLanguageType_Chinese,
     HKAdsLanguageType_English
 };
 
-extern NSString *HKInterstitialDidHideNotificationName;
 
 @interface HKAdsController : NSObject
 

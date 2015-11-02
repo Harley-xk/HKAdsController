@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
+extern NSString *HKInterstitialDidShowNotificationName;
+extern NSString *HKInterstitialDidHideNotificationName;
+extern NSString *HKInterstitialDidLoadNotificationName;
+
 @interface HKAdsInterstitialController : NSObject
 
 + (instancetype)sharedController;
