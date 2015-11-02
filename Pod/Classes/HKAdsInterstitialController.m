@@ -20,7 +20,7 @@ NSString *HKInterstitialDidLoadNotificationName = @"HKInterstitialDidLoadNotific
 
 @property (assign, nonatomic) BOOL showAdsImmediately;
 @property (strong, nonatomic) UIWindow *adsWindow;
-@property (assign, nonatomic) BOOL didHideAdsWindow;
+@property (assign, nonatomic) BOOL didHideAds;
 
 // 上次显示广告的时间
 @property (strong, nonatomic) NSDate *lastInterstitial;
@@ -90,19 +90,21 @@ NSString *HKInterstitialDidLoadNotificationName = @"HKInterstitialDidLoadNotific
 
         [self.interstitial presentFromRootViewController:self.adsWindow.rootViewController];
         self.lastInterstitial = [NSDate date];
-        self.didHideAdsWindow = NO;
+        self.didHideAds = NO;
         [[NSNotificationCenter defaultCenter] postNotificationName:HKInterstitialDidShowNotificationName object:nil];
     }
 }
 
 - (void)hideInterstitialAds
 {
-    if (self.didHideAdsWindow) {
+    if (self.adsWindow != nil) {
         return;
     }
-    self.didHideAdsWindow = YES;
     
-    [self.adsWindow.rootViewController dismissViewControllerAnimated:YES completion:nil];
+    if (!self.didHideAds) {
+        [self.adsWindow.rootViewController dismissViewControllerAnimated:YES completion:nil];
+    }
+    
     [UIView animateWithDuration:0.25 animations:^{
         self.adsWindow.alpha = 0;
     } completion:^(BOOL finished) {
@@ -130,6 +132,7 @@ NSString *HKInterstitialDidLoadNotificationName = @"HKInterstitialDidLoadNotific
 
 - (void)interstitialDidDismissScreen:(GADInterstitial *)ad
 {
+    self.didHideAds = YES;
     [self hideInterstitialAds];
 }
 
