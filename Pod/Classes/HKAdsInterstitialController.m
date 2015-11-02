@@ -132,8 +132,8 @@ NSString *HKInterstitialDidLoadNotificationName = @"HKInterstitialDidLoadNotific
 
 - (void)interstitialDidDismissScreen:(GADInterstitial *)ad
 {
-    self.didHideAds = YES;
     [self hideInterstitialAds];
+    self.didHideAds = YES;
 }
 
 - (void)interstitial:(GADInterstitial *)ad didFailToReceiveAdWithError:(GADRequestError *)error
