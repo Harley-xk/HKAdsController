@@ -7,8 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-
-//#import <DMAdView.h>
 #import <GoogleMobileAds/GoogleMobileAds.h>
 
 typedef NS_ENUM(NSUInteger, HKAdsLanguageType)
@@ -17,6 +15,7 @@ typedef NS_ENUM(NSUInteger, HKAdsLanguageType)
     HKAdsLanguageType_English
 };
 
+extern NSString *HKInterstitialDidHideNotificationName;
 
 @interface HKAdsController : NSObject
 
@@ -33,22 +32,7 @@ typedef NS_ENUM(NSUInteger, HKAdsLanguageType)
 - (HKAdsLanguageType)currentLangeType;
 
 /**
- *  显示和隐藏开屏广告
- */
-- (void)presentInterstitials;
-- (void)hideInterstitials;
-
-///**
-// * 多盟广告位ID
-// *///////////
-//@property (copy,   nonatomic) NSString *domobPublisherID;
-//// 插屏广告ID
-//@property (copy,   nonatomic) NSString *domobInterstitialID;
-//// 广告条ID
-//@property (copy,   nonatomic) NSString *domobBannerID;
-
-/**
- * AdMob广告位ID
+ * 广告位ID
  *///////////
 @property (copy,   nonatomic) NSString *admobPublisherID;
 // 插屏广告ID

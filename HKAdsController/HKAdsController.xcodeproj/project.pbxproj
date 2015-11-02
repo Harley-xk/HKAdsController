@@ -15,9 +15,9 @@
 		C31727EE1BDE325A004F36CE /* HKAdsController.podspec in Resources */ = {isa = PBXBuildFile; fileRef = C31727ED1BDE325A004F36CE /* HKAdsController.podspec */; };
 		C31727F01BDE3281004F36CE /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = C31727EF1BDE3281004F36CE /* README.md */; };
 		C31727F31BDE3390004F36CE /* HKAdsController.m in Sources */ = {isa = PBXBuildFile; fileRef = C31727F21BDE3390004F36CE /* HKAdsController.m */; };
+		C3D0FD031BE742040061391D /* HKAdsInterstitialController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D0FD021BE742040061391D /* HKAdsInterstitialController.m */; };
 		C3D1CF9C1BDF6D0D0013FC26 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3D1CF981BDF6D0D0013FC26 /* LaunchScreen.storyboard */; };
 		C3D1CF9D1BDF6D0D0013FC26 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C3D1CF9A1BDF6D0D0013FC26 /* Main.storyboard */; };
-		C3D1CFA21BDF70600013FC26 /* HKInterstitialAdsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D1CFA11BDF70600013FC26 /* HKInterstitialAdsViewController.m */; };
 		C3D1CFA71BE0598E0013FC26 /* HKAdsBannerView.m in Sources */ = {isa = PBXBuildFile; fileRef = C3D1CFA61BE0598E0013FC26 /* HKAdsBannerView.m */; };
 /* End PBXBuildFile section */
 
@@ -37,10 +37,10 @@
 		C31727EF1BDE3281004F36CE /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		C31727F11BDE3390004F36CE /* HKAdsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKAdsController.h; sourceTree = "<group>"; };
 		C31727F21BDE3390004F36CE /* HKAdsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKAdsController.m; sourceTree = "<group>"; };
+		C3D0FD011BE742040061391D /* HKAdsInterstitialController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKAdsInterstitialController.h; sourceTree = "<group>"; };
+		C3D0FD021BE742040061391D /* HKAdsInterstitialController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKAdsInterstitialController.m; sourceTree = "<group>"; };
 		C3D1CF991BDF6D0D0013FC26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		C3D1CF9B1BDF6D0D0013FC26 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		C3D1CFA01BDF70600013FC26 /* HKInterstitialAdsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKInterstitialAdsViewController.h; sourceTree = "<group>"; };
-		C3D1CFA11BDF70600013FC26 /* HKInterstitialAdsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HKInterstitialAdsViewController.m; sourceTree = "<group>"; };
 		C3D1CFA31BDF7D500013FC26 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/LaunchScreen.strings"; sourceTree = "<group>"; };
 		C3D1CFA41BDF7D500013FC26 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Main.strings"; sourceTree = "<group>"; };
 		C3D1CFA51BE0598E0013FC26 /* HKAdsBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HKAdsBannerView.h; sourceTree = "<group>"; };
@@ -143,8 +143,8 @@
 			children = (
 				C31727F11BDE3390004F36CE /* HKAdsController.h */,
 				C31727F21BDE3390004F36CE /* HKAdsController.m */,
-				C3D1CFA01BDF70600013FC26 /* HKInterstitialAdsViewController.h */,
-				C3D1CFA11BDF70600013FC26 /* HKInterstitialAdsViewController.m */,
+				C3D0FD011BE742040061391D /* HKAdsInterstitialController.h */,
+				C3D0FD021BE742040061391D /* HKAdsInterstitialController.m */,
 				C3D1CFA51BE0598E0013FC26 /* HKAdsBannerView.h */,
 				C3D1CFA61BE0598E0013FC26 /* HKAdsBannerView.m */,
 			);
@@ -274,8 +274,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				C3D1CFA71BE0598E0013FC26 /* HKAdsBannerView.m in Sources */,
-				C3D1CFA21BDF70600013FC26 /* HKInterstitialAdsViewController.m in Sources */,
 				C317275E1BDE31FB004F36CE /* ViewController.m in Sources */,
+				C3D0FD031BE742040061391D /* HKAdsInterstitialController.m in Sources */,
 				C317275B1BDE31FB004F36CE /* AppDelegate.m in Sources */,
 				C31727F31BDE3390004F36CE /* HKAdsController.m in Sources */,
 				C31727F01BDE3281004F36CE /* README.md in Sources */,
