@@ -97,7 +97,7 @@ NSString *HKInterstitialDidLoadNotificationName = @"HKInterstitialDidLoadNotific
 
 - (void)hideInterstitialAds
 {
-    if (self.adsWindow != nil) {
+    if (self.adsWindow == nil) {
         return;
     }
     
