@@ -61,6 +61,13 @@ NSString *HKInterstitialDidLoadNotificationName = @"HKInterstitialDidLoadNotific
         
         GADRequest *request = [GADRequest request];
         //    request.testDevices = @[ kGADSimulatorID, @"5b5a10a7e85f83f807914a9d10c21494" ];
+        
+        request.gender = self.adsController.gender;
+        request.birthday = self.adsController.birthday;
+        [request setLocationWithLatitude:self.adsController.location.coordinate.latitude
+                               longitude:self.adsController.location.coordinate.longitude
+                                accuracy:self.adsController.locationAccuracyInMeters];
+
         [self.interstitial loadRequest:request];
     }
 }

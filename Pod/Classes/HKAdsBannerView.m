@@ -22,4 +22,16 @@
     [self setAutoloadEnabled:YES];
 }
 
+- (void)loadRequest:(GADRequest *)request
+{
+    HKAdsController *adsController = [HKAdsController sharedController];
+
+    request.gender = adsController.gender;
+    request.birthday = adsController.birthday;
+    [request setLocationWithLatitude:adsController.location.coordinate.latitude
+                           longitude:adsController.location.coordinate.longitude
+                            accuracy:adsController.locationAccuracyInMeters];
+    [super loadRequest:request];
+}
+
 @end

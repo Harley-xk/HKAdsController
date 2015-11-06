@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <GoogleMobileAds/GoogleMobileAds.h>
+#import <CoreLocation/CoreLocation.h>
 
 #import "HKAdsInterstitialController.h"
 #import "HKAdsBannerView.h"
@@ -32,6 +33,19 @@ typedef NS_ENUM(NSUInteger, HKAdsLanguageType)
  *  当前语言状态
  */
 - (HKAdsLanguageType)currentLangeType;
+
+/// Provide the user's gender to increase ad relevancy.
+@property(nonatomic, assign) GADGender gender;
+
+/// Provide the user's birthday to increase ad relevancy.
+@property(nonatomic, copy) NSDate *birthday;
+
+/// The user's current location may be used to deliver more relevant ads. However do not use Core
+/// Location just for advertising, make sure it is used for more beneficial reasons as well. It is
+/// both a good idea and part of Apple's guidelines.
+@property (copy,   nonatomic) CLLocation *location;
+@property (assign, nonatomic) CLLocationAccuracy locationAccuracyInMeters;
+
 
 /**
  * 广告位ID
