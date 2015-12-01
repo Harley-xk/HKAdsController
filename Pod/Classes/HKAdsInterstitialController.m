@@ -74,13 +74,14 @@ NSString *HKInterstitialDidLoadNotificationName = @"HKInterstitialDidLoadNotific
 
 - (void)showInterstitialAds
 {
+    if (self.adsController.adsDisabled) {
+        return;
+    }
+
     if (self.interstitial == nil || !self.interstitial.isReady) {
         self.showAdsImmediately = YES;
         [self loadInterstitialAds];
     }else {
-        if (self.adsController.adsDisabled) {
-            return;
-        }
         
         if (self.lastInterstitial) {
             NSTimeInterval time = [[NSDate date] timeIntervalSinceDate:self.lastInterstitial];

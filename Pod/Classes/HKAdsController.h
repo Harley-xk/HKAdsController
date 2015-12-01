@@ -19,6 +19,7 @@ typedef NS_ENUM(NSUInteger, HKAdsLanguageType)
     HKAdsLanguageType_English
 };
 
+extern NSString *HKAdsAbilityChangedNotificationName;
 
 @interface HKAdsController : NSObject
 

@@ -10,6 +10,7 @@
 #import <HKProjectBase.h>
 
 NSString *kAdsDisabledKey = @"com.HKAdsController.AdsDisabled";
+NSString *HKAdsAbilityChangedNotificationName = @"com.HKAdsController.HKAdsAbilityChangedNotificationName";
 
 @interface HKAdsController ()
 @property (assign, nonatomic) HKAdsLanguageType languageType;
@@ -50,8 +51,13 @@ NSString *kAdsDisabledKey = @"com.HKAdsController.AdsDisabled";
 
 - (void)setAdsDisabled:(BOOL)adsDisabled
 {
+    if (_adsDisabled == adsDisabled) {
+        return;
+    }
     _adsDisabled = adsDisabled;
     [HKUserDefaults setBool:adsDisabled forKey:kAdsDisabledKey];
+    
+    [[NSNotificationCenter defaultCenter] postNotificationName:HKAdsAbilityChangedNotificationName object:nil];
 }
 
 - (HKAdsLanguageType)currentLangeType

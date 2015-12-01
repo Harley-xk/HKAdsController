@@ -13,11 +13,7 @@
 - (void)awakeFromNib
 {
     HKAdsController *adsController = [HKAdsController sharedController];
-    
-    if ([adsController adsDisabled]) {
-        self.hidden = YES;
-    }
-    
+        
     [self setAdUnitID:adsController.admobBannerID];
     [self setAutoloadEnabled:YES];
 }
@@ -25,7 +21,7 @@
 - (void)loadRequest:(GADRequest *)request
 {
     HKAdsController *adsController = [HKAdsController sharedController];
-
+    
     request.gender = adsController.gender;
     request.birthday = adsController.birthday;
     [request setLocationWithLatitude:adsController.location.coordinate.latitude
